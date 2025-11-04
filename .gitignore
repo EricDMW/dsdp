@@ -1,0 +1,15 @@
+# Ignore all Markdown files
+*.md
+
+# Ignore all CSV files
+*.csv
+
+# Ignore entire directories
+data_to_plot/
+plots/
+runs/
+example_plots/
+
+# Ignore any file or folder whose name includes "example" or "plot"
+*example*
+*plot*
