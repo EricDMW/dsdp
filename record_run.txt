@@ -1,0 +1,2 @@
+Verion 1 results record: run 107-110 -> range from 0 to 3
+                         run 104-106 -> seed 1, 73, 100
