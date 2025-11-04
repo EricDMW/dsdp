@@ -11,5 +11,4 @@ runs/
 example_plots/
 
 # Ignore any file or folder whose name includes "example" or "plot"
-*example*
 *plot*
