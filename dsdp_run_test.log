@@ -1,0 +1,1650 @@
+2025-07-20 02:35:44,785 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:35:44,785 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:37:26,573 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:37:26,573 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:37:26,573 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-20 02:37:26,573 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_1
+2025-07-20 02:37:26,574 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_1/info/run_info.json
+2025-07-20 02:37:26,574 - INFO - 🚀 Starting training for run_1
+2025-07-20 02:37:26,574 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_1
+2025-07-20 02:37:26,574 - INFO - Running command: /opt/anaconda3/bin/python -m dsdp.wireless_comm.main --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_1/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_1/training_progress/training_log.csv --total_timesteps 1000 --grid_size 5 --max_cycles 12
+2025-07-20 02:37:26,583 - ERROR - ❌ Training failed for run_1
+2025-07-20 02:37:26,583 - ERROR - Error output: /opt/anaconda3/bin/python: No module named dsdp.wireless_comm.main
+
+2025-07-20 02:37:26,583 - ERROR - ❌ Training error for run_1: Training failed with return code 1
+2025-07-20 02:37:26,597 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-20 02:37:26,599 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 537, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 284, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 184, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:37:58,692 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:37:58,692 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:37:58,692 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_2
+2025-07-20 02:37:58,692 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_2/info/run_info.json
+2025-07-20 02:37:58,692 - INFO - 🚀 Starting training for run_2
+2025-07-20 02:37:58,692 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_2
+2025-07-20 02:37:58,692 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_2/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_2/training_progress/training_log.csv --total_timesteps 100 --grid_size 3 --max_cycles 8
+2025-07-20 02:38:00,003 - ERROR - ❌ Training failed for run_2
+2025-07-20 02:38:00,003 - ERROR - Error output: Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 31, in <module>
+    from wireless_comm.config import get_args, save_hyperparameters, print_hyperparameters
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/__init__.py", line 15, in <module>
+    from .config import get_args, save_hyperparameters, load_parameters
+ImportError: cannot import name 'load_parameters' from 'wireless_comm.config' (/home/dongmingwang/project/DSDP/dsdp/wireless_comm/config.py). Did you mean: 'load_hyperparameters'?
+
+2025-07-20 02:38:00,004 - ERROR - ❌ Training error for run_2: Training failed with return code 1
+2025-07-20 02:38:00,018 - ERROR - Error in train: Training failed with return code 1
+2025-07-20 02:38:00,020 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 497, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 184, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:38:28,091 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:38:28,091 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:38:28,092 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_3
+2025-07-20 02:38:28,092 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_3/info/run_info.json
+2025-07-20 02:38:28,092 - INFO - 🚀 Starting training for run_3
+2025-07-20 02:38:28,092 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_3
+2025-07-20 02:38:28,092 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_3/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_3/training_progress/training_log.csv --total_timesteps 100 --grid_size 3 --max_cycles 8
+2025-07-20 02:38:31,011 - ERROR - ❌ Training failed for run_3
+2025-07-20 02:38:31,011 - ERROR - Error output: 2025-07-20 02:38:29.788020: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-20 02:38:29.794798: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753004309.802710  758734 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753004309.805095  758734 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753004309.811280  758734 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004309.811289  758734 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004309.811289  758734 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004309.811290  758734 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-20 02:38:29.813284: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 31, in <module>
+    from wireless_comm.config import get_args, save_hyperparameters, print_hyperparameters
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/__init__.py", line 20, in <module>
+    from .utils import name_with_datetime, find_neighbors, gather_critical_scores
+ImportError: cannot import name 'gather_critical_scores' from 'wireless_comm.utils' (/home/dongmingwang/project/DSDP/dsdp/wireless_comm/utils.py). Did you mean: 'gather_critic_score'?
+
+2025-07-20 02:38:31,011 - ERROR - ❌ Training error for run_3: Training failed with return code 1
+2025-07-20 02:38:31,011 - ERROR - Error in train: Training failed with return code 1
+2025-07-20 02:38:31,013 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 497, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 184, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:38:53,889 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:38:53,889 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:38:53,889 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_4
+2025-07-20 02:38:53,889 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_4/info/run_info.json
+2025-07-20 02:38:53,889 - INFO - 🚀 Starting training for run_4
+2025-07-20 02:38:53,889 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_4
+2025-07-20 02:38:53,889 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_4/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_4/training_progress/training_log.csv --total_timesteps 100 --grid_size 3 --max_cycles 8
+2025-07-20 02:38:56,790 - ERROR - ❌ Training failed for run_4
+2025-07-20 02:38:56,790 - ERROR - Error output: 2025-07-20 02:38:55.602449: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-20 02:38:55.609161: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753004335.617224  759045 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753004335.619629  759045 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753004335.625773  759045 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004335.625781  759045 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004335.625782  759045 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004335.625782  759045 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-20 02:38:55.627814: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 31, in <module>
+    from wireless_comm.config import get_args, save_hyperparameters, print_hyperparameters
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/__init__.py", line 21, in <module>
+    from .visualization import (
+ImportError: cannot import name 'plot_training_progress' from 'wireless_comm.visualization' (/home/dongmingwang/project/DSDP/dsdp/wireless_comm/visualization.py)
+
+2025-07-20 02:38:56,790 - ERROR - ❌ Training error for run_4: Training failed with return code 1
+2025-07-20 02:38:56,804 - ERROR - Error in train: Training failed with return code 1
+2025-07-20 02:38:56,806 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 497, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 184, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:39:26,030 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:39:26,030 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:39:26,030 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_5
+2025-07-20 02:39:26,030 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_5/info/run_info.json
+2025-07-20 02:39:26,030 - INFO - 🚀 Starting training for run_5
+2025-07-20 02:39:26,030 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_5
+2025-07-20 02:39:26,030 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_5/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_5/training_progress/training_log.csv --total_timesteps 100 --grid_size 3 --max_cycles 8
+2025-07-20 02:40:08,379 - ERROR - ❌ Training failed for run_5
+2025-07-20 02:40:08,379 - ERROR - Error output: 2025-07-20 02:39:27.733498: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-20 02:39:27.740342: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753004367.748500  759513 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753004367.750878  759513 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753004367.757089  759513 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004367.757100  759513 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004367.757101  759513 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004367.757102  759513 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-20 02:39:27.759125: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:No activity for 15 seconds, auto-saving and closing
+usage: main.py [-h] [--gym-id GYM_ID] [--grid-size GRID_SIZE] [--pkg-p PKG_P]
+               [--success-p SUCCESS_P] [--ddl DDL] [--max-cycles MAX_CYCLES]
+               [--n-obs-neighbors N_OBS_NEIGHBORS] [--test-every TEST_EVERY]
+               [--actor-lr ACTOR_LR] [--critic-lr CRITIC_LR] [--seed SEED]
+               [--cpu] [--total-timesteps TOTAL_TIMESTEPS]
+               [--torch-deterministic [TORCH_DETERMINISTIC]] [--track [TRACK]]
+               [--debug [DEBUG]] [--anneal-lr [ANNEAL_LR]]
+               [--n-sample-traj N_SAMPLE_TRAJ]
+               [--n-sample-Q-steps N_SAMPLE_Q_STEPS]
+               [--target-network-frequency TARGET_NETWORK_FREQUENCY]
+               [--tau TAU] [--gamma GAMMA] [--reward-scale REWARD_SCALE]
+               [--update-epochs UPDATE_EPOCHS] [--max-grad-norm MAX_GRAD_NORM]
+               [--eta-mu ETA_MU] [--rhs RHS] [--log-path LOG_PATH]
+               [--save-dir SAVE_DIR] [--experiment-name EXPERIMENT_NAME]
+               [--model {mlp,cnn,rnn,transformer}] [--hidden-size HIDDEN_SIZE]
+               [--num-layers NUM_LAYERS] [--tune-parameters [TUNE_PARAMETERS]]
+               [--parameters-dir PARAMETERS_DIR]
+main.py: error: unrecognized arguments: --total_timesteps 100 --grid_size 3 --max_cycles 8
+
+2025-07-20 02:40:08,380 - ERROR - ❌ Training error for run_5: Training failed with return code 2
+2025-07-20 02:40:08,394 - ERROR - Error in train: Training failed with return code 2
+2025-07-20 02:40:08,395 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 497, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 184, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 2
+
+2025-07-20 02:40:20,363 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:40:20,363 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:40:20,363 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_6
+2025-07-20 02:40:20,363 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_6/info/run_info.json
+2025-07-20 02:40:20,363 - INFO - 🚀 Starting training for run_6
+2025-07-20 02:40:20,363 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_6
+2025-07-20 02:40:20,363 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_6/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_6/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8
+2025-07-20 02:40:28,314 - ERROR - ❌ Training failed for run_6
+2025-07-20 02:40:28,314 - ERROR - Error output: 2025-07-20 02:40:22.066724: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-20 02:40:22.073809: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753004422.081966  760122 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753004422.084441  760122 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753004422.090595  760122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004422.090604  760122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004422.090605  760122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004422.090605  760122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-20 02:40:22.092612: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 813, in save_hyperparameters
+    'learning_starts': self.args.learning_starts,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'learning_starts'
+
+2025-07-20 02:40:28,314 - ERROR - ❌ Training error for run_6: Training failed with return code 1
+2025-07-20 02:40:28,328 - ERROR - Error in train: Training failed with return code 1
+2025-07-20 02:40:28,331 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 499, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 186, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:40:50,733 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:40:50,733 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:40:50,733 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_8
+2025-07-20 02:40:50,733 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_8/info/run_info.json
+2025-07-20 02:40:50,733 - INFO - 🚀 Starting training for run_8
+2025-07-20 02:40:50,733 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_8
+2025-07-20 02:40:50,733 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_8/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_8/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8
+2025-07-20 02:41:14,723 - ERROR - ❌ Training failed for run_8
+2025-07-20 02:41:14,723 - ERROR - Error output: 2025-07-20 02:40:52.438163: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-20 02:40:52.444942: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753004452.452769  760473 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753004452.455169  760473 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753004452.461386  760473 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004452.461396  760473 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004452.461397  760473 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004452.461398  760473 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-20 02:40:52.463452: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 814, in save_hyperparameters
+    'batch_size': self.args.batch_size,
+                  ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'batch_size'
+
+2025-07-20 02:41:14,723 - ERROR - ❌ Training error for run_8: Training failed with return code 1
+2025-07-20 02:41:14,737 - ERROR - Error in train: Training failed with return code 1
+2025-07-20 02:41:14,740 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 499, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 186, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:41:37,874 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:41:37,874 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:41:37,875 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_10
+2025-07-20 02:41:37,875 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_10/info/run_info.json
+2025-07-20 02:41:37,875 - INFO - 🚀 Starting training for run_10
+2025-07-20 02:41:37,875 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_10
+2025-07-20 02:41:37,875 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_10/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_10/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8
+2025-07-20 02:41:47,149 - ERROR - ❌ Training failed for run_10
+2025-07-20 02:41:47,149 - ERROR - Error output: 2025-07-20 02:41:39.561312: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-20 02:41:39.568038: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753004499.575901  761157 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753004499.578290  761157 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753004499.584422  761157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004499.584431  761157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004499.584432  761157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753004499.584433  761157 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-20 02:41:39.586395: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 815, in save_hyperparameters
+    'buffer_size': self.args.buffer_size,
+                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'buffer_size'
+
+2025-07-20 02:41:47,150 - ERROR - ❌ Training error for run_10: Training failed with return code 1
+2025-07-20 02:41:47,164 - ERROR - Error in train: Training failed with return code 1
+2025-07-20 02:41:47,169 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 499, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 186, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:42:00,331 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:42:00,331 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:42:00,331 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-20 02:42:00,331 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_12
+2025-07-20 02:42:00,331 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_12/info/run_info.json
+2025-07-20 02:42:00,331 - INFO - 🚀 Starting training for run_12
+2025-07-20 02:42:00,331 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_12
+2025-07-20 02:42:00,331 - INFO - Running command: /opt/anaconda3/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_12/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_12/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-20 02:42:00,384 - ERROR - ❌ Training failed for run_12
+2025-07-20 02:42:00,385 - ERROR - Error output: Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 31, in <module>
+    from wireless_comm.config import get_args, save_hyperparameters, print_hyperparameters
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/__init__.py", line 16, in <module>
+    from .environment import WirelessEnvironment
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/environment.py", line 16, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+2025-07-20 02:42:00,385 - ERROR - ❌ Training error for run_12: Training failed with return code 1
+2025-07-20 02:42:00,385 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-20 02:42:00,386 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 539, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 286, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 186, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-20 02:42:05,299 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-20 02:42:05,300 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-20 02:42:05,300 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_13
+2025-07-20 02:42:05,300 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_13/info/run_info.json
+2025-07-20 02:42:05,300 - INFO - 🚀 Starting training for run_13
+2025-07-20 02:42:05,300 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_13
+2025-07-20 02:42:05,300 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_13/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_13/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8
+2025-07-21 15:27:20,558 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:27:20,558 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:27:20,559 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:27:20,559 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_16
+2025-07-21 15:27:20,559 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_16/info/run_info.json
+2025-07-21 15:27:20,559 - INFO - 🚀 Starting training for run_16
+2025-07-21 15:27:20,559 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_16
+2025-07-21 15:27:20,559 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_16/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_16/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:31:20,597 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:31:20,597 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:31:20,597 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:31:20,597 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_17
+2025-07-21 15:31:20,597 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_17/info/run_info.json
+2025-07-21 15:31:20,597 - INFO - 🚀 Starting training for run_17
+2025-07-21 15:31:20,597 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_17
+2025-07-21 15:31:20,597 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_17/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_17/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:34:06,481 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:34:06,481 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:34:06,481 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:34:06,481 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_18
+2025-07-21 15:34:06,481 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_18/info/run_info.json
+2025-07-21 15:34:06,481 - INFO - 🚀 Starting training for run_18
+2025-07-21 15:34:06,482 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_18
+2025-07-21 15:34:06,482 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_18/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_18/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:34:19,021 - ERROR - ❌ Training failed for run_18
+2025-07-21 15:34:19,021 - ERROR - Error output: 2025-07-21 15:34:08.154811: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-21 15:34:08.161621: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753137248.169558 1969122 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753137248.171973 1969122 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753137248.178221 1969122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137248.178229 1969122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137248.178230 1969122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137248.178231 1969122 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-21 15:34:08.180279: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_153412.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_153417.json
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 817, in save_hyperparameters
+    'policy_frequency': self.args.policy_frequency,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'policy_frequency'
+
+2025-07-21 15:34:19,021 - ERROR - ❌ Training error for run_18: Training failed with return code 1
+2025-07-21 15:34:19,053 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-21 15:34:19,053 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1001, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 308, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-21 15:36:47,041 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:36:47,042 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:36:47,042 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:36:47,042 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_20
+2025-07-21 15:36:47,042 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_20/info/run_info.json
+2025-07-21 15:36:47,042 - INFO - 🚀 Starting training for run_20
+2025-07-21 15:36:47,042 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_20
+2025-07-21 15:36:47,042 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_20/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_20/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:36:57,131 - ERROR - ❌ Training failed for run_20
+2025-07-21 15:36:57,132 - ERROR - Error output: 2025-07-21 15:36:48.696243: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-21 15:36:48.702670: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753137408.710467 1970730 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753137408.712783 1970730 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753137408.718767 1970730 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137408.718776 1970730 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137408.718777 1970730 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137408.718778 1970730 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-21 15:36:48.720707: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_153651.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_153655.json
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 818, in save_hyperparameters
+    'noise_clip': self.args.noise_clip,
+                  ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'noise_clip'
+
+2025-07-21 15:36:57,132 - ERROR - ❌ Training error for run_20: Training failed with return code 1
+2025-07-21 15:36:57,164 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-21 15:36:57,165 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1001, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 308, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-21 15:37:45,413 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:37:45,413 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:37:45,413 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:37:45,413 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_22
+2025-07-21 15:37:45,413 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_22/info/run_info.json
+2025-07-21 15:37:45,413 - INFO - 🚀 Starting training for run_22
+2025-07-21 15:37:45,413 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_22
+2025-07-21 15:37:45,413 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_22/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_22/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:37:54,340 - ERROR - ❌ Training failed for run_22
+2025-07-21 15:37:54,340 - ERROR - Error output: 2025-07-21 15:37:47.072875: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-21 15:37:47.079530: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753137467.087343 1971548 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753137467.089710 1971548 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753137467.095802 1971548 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137467.095811 1971548 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137467.095812 1971548 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137467.095812 1971548 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-21 15:37:47.097776: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_153749.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_153752.json
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 819, in save_hyperparameters
+    'alpha': self.args.alpha,
+             ^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'alpha'
+
+2025-07-21 15:37:54,341 - ERROR - ❌ Training error for run_22: Training failed with return code 1
+2025-07-21 15:37:54,355 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-21 15:37:54,356 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1001, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 308, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-21 15:41:17,008 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:41:17,008 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:41:17,008 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:41:17,008 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_24
+2025-07-21 15:41:17,008 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_24/info/run_info.json
+2025-07-21 15:41:17,008 - INFO - 🚀 Starting training for run_24
+2025-07-21 15:41:17,008 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_24
+2025-07-21 15:41:17,008 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_24/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_24/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:41:28,319 - ERROR - ❌ Training failed for run_24
+2025-07-21 15:41:28,319 - ERROR - Error output: 2025-07-21 15:41:18.685259: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-21 15:41:18.691895: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753137678.700185 1974028 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753137678.702584 1974028 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753137678.708794 1974028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137678.708804 1974028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137678.708805 1974028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137678.708806 1974028 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-21 15:41:18.710889: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154121.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154126.json
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 296, in train
+    self.save_hyperparameters()
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 819, in save_hyperparameters
+    'alpha': self.args.alpha,
+             ^^^^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'alpha'
+
+2025-07-21 15:41:28,319 - ERROR - ❌ Training error for run_24: Training failed with return code 1
+2025-07-21 15:41:28,333 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-21 15:41:28,334 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1001, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 308, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-21 15:42:56,083 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:42:56,083 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:42:56,083 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-21 15:42:56,083 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_26
+2025-07-21 15:42:56,083 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_26/info/run_info.json
+2025-07-21 15:42:56,083 - INFO - 🚀 Starting training for run_26
+2025-07-21 15:42:56,083 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_26
+2025-07-21 15:42:56,083 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_26/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_26/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:43:10,561 - ERROR - ❌ Training failed for run_26
+2025-07-21 15:43:10,561 - ERROR - Error output: 2025-07-21 15:42:57.699899: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-21 15:42:57.706420: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753137777.714041 1975230 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753137777.716319 1975230 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753137777.722115 1975230 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137777.722124 1975230 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137777.722125 1975230 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137777.722125 1975230 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-21 15:42:57.724008: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154301.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154305.json
+
+  0%|          | 0/3 [00:00<?, ?it/s]
+  0%|          | 0/3 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 324, in train
+    self._log_results(update, trajectories, total_violation)
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 720, in _log_results
+    if self.log_writer is not None:
+       ^^^^^^^^^^^^^^^
+AttributeError: 'WirelessTrainer' object has no attribute 'log_writer'
+
+2025-07-21 15:43:10,561 - ERROR - ❌ Training error for run_26: Training failed with return code 1
+2025-07-21 15:43:10,575 - ERROR - Error in pipeline: Training failed with return code 1
+2025-07-21 15:43:10,576 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1001, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 308, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-21 15:43:58,886 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:43:58,887 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:43:58,887 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_28
+2025-07-21 15:43:58,887 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_28/info/run_info.json
+2025-07-21 15:43:58,887 - INFO - 🚀 Starting training for run_28
+2025-07-21 15:43:58,887 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_28
+2025-07-21 15:43:58,887 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_28/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_28/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:44:16,356 - ERROR - ❌ Training failed for run_28
+2025-07-21 15:44:16,356 - ERROR - Error output: 2025-07-21 15:44:00.537660: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-21 15:44:00.544142: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753137840.552087 1976054 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753137840.554433 1976054 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753137840.560447 1976054 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137840.560457 1976054 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137840.560457 1976054 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753137840.560458 1976054 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-21 15:44:00.562359: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154403.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154408.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250721_154411.json
+
+  0%|          | 0/3 [00:00<?, ?it/s]
+  0%|          | 0/3 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 64, in main
+    model_id = trainer.train()
+               ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 324, in train
+    self._log_results(update, trajectories, total_violation)
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 720, in _log_results
+    if self.log_writer is not None:
+       ^^^^^^^^^^^^^^^
+AttributeError: 'WirelessTrainer' object has no attribute 'log_writer'
+
+2025-07-21 15:44:16,356 - ERROR - ❌ Training error for run_28: Training failed with return code 1
+2025-07-21 15:44:16,371 - ERROR - Error in train: Training failed with return code 1
+2025-07-21 15:44:16,371 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 961, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-21 15:49:10,606 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-21 15:49:10,606 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-21 15:49:10,607 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_30
+2025-07-21 15:49:10,607 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_30/info/run_info.json
+2025-07-21 15:49:10,607 - INFO - 🚀 Starting training for run_30
+2025-07-21 15:49:10,607 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_30
+2025-07-21 15:49:10,607 - INFO - Running command: /opt/anaconda3/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_30/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_30/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-21 15:49:10,658 - ERROR - ❌ Training failed for run_30
+2025-07-21 15:49:10,658 - ERROR - Error output: Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 31, in <module>
+    from wireless_comm.config import get_args, save_hyperparameters, print_hyperparameters
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/__init__.py", line 16, in <module>
+    from .environment import WirelessEnvironment
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/environment.py", line 16, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+2025-07-21 15:49:10,658 - ERROR - ❌ Training error for run_30: Training failed with return code 1
+2025-07-21 15:49:10,659 - ERROR - Error in train: Training failed with return code 1
+2025-07-21 15:49:10,659 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 961, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-22 13:57:22,493 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 13:57:22,494 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 13:57:22,494 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_31
+2025-07-22 13:57:22,494 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_31/info/run_info.json
+2025-07-22 13:57:22,494 - INFO - 🚀 Starting training for run_31
+2025-07-22 13:57:22,494 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_31
+2025-07-22 13:57:22,494 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python main.py --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_31/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_31/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 13:57:38,395 - ERROR - ❌ Training failed for run_31
+2025-07-22 13:57:38,395 - ERROR - Error output: 2025-07-22 13:57:24.186077: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-22 13:57:24.192767: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753217844.200674 2695434 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753217844.203099 2695434 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753217844.209389 2695434 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753217844.209400 2695434 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753217844.209401 2695434 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753217844.209402 2695434 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-22 13:57:24.211476: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250722_135729.json
+INFO:toolkit.parakit.tune_para:Parameters saved to: parameters/parameters_20250722_135733.json
+
+  0%|          | 0/3 [00:00<?, ?it/s]
+  0%|          | 0/3 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/main.py", line 59, in main
+    run_number = trainer.train()
+                 ^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 328, in train
+    self._log_results(update, trajectories, total_violation)
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/trainer.py", line 724, in _log_results
+    if self.log_writer is not None:
+       ^^^^^^^^^^^^^^^
+AttributeError: 'WirelessTrainer' object has no attribute 'log_writer'
+
+2025-07-22 13:57:38,396 - ERROR - ❌ Training error for run_31: Training failed with return code 1
+2025-07-22 13:57:38,427 - ERROR - Error in train: Training failed with return code 1
+2025-07-22 13:57:38,428 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 961, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 208, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-07-22 14:11:06,915 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:11:06,915 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:11:06,915 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_48
+2025-07-22 14:11:06,915 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_48/info/run_info.json
+2025-07-22 14:11:06,915 - INFO - 🚀 Starting training for run_48
+2025-07-22 14:11:06,915 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_48
+2025-07-22 14:11:06,915 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_48/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_48/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:11:28,483 - INFO - ✅ Training completed successfully for run_48
+2025-07-22 14:12:20,479 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:12:20,479 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:12:20,479 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-22 14:12:20,479 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50
+2025-07-22 14:12:20,479 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50/info/run_info.json
+2025-07-22 14:12:20,479 - INFO - 🚀 Starting training for run_50
+2025-07-22 14:12:20,479 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50
+2025-07-22 14:12:20,479 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:12:43,212 - INFO - ✅ Training completed successfully for run_50
+2025-07-22 14:12:43,212 - INFO - 🎬 Starting execution for: run_50
+2025-07-22 14:12:43,212 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50 --num_episodes 5 --fps 3
+2025-07-22 14:12:46,017 - INFO - ✅ Execution completed successfully for run_50
+2025-07-22 14:12:46,017 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_50/info/execution_info.json
+2025-07-22 14:12:46,017 - INFO - 🎉 Complete pipeline finished for run_50
+2025-07-22 14:17:23,345 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:17:23,345 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:17:23,345 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-22 14:17:23,352 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_52
+2025-07-22 14:17:23,352 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_52/info/run_info.json
+2025-07-22 14:17:23,352 - INFO - 🚀 Starting training for run_52
+2025-07-22 14:17:23,352 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_52
+2025-07-22 14:17:23,352 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_52/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_52/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:19:15,539 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:19:15,539 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:19:15,539 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-07-22 14:19:15,539 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53
+2025-07-22 14:19:15,540 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53/info/run_info.json
+2025-07-22 14:19:15,540 - INFO - 🚀 Starting training for run_53
+2025-07-22 14:19:15,540 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53
+2025-07-22 14:19:15,540 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:21:04,079 - INFO - ✅ Training completed successfully for run_53
+2025-07-22 14:21:04,079 - INFO - 🎬 Starting execution for: run_53
+2025-07-22 14:21:04,079 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53 --num_episodes 5 --fps 3
+2025-07-22 14:21:07,109 - INFO - ✅ Execution completed successfully for run_53
+2025-07-22 14:21:07,109 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53/info/execution_info.json
+2025-07-22 14:21:07,109 - INFO - 🎉 Complete pipeline finished for run_53
+2025-07-22 14:26:00,435 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:26:00,435 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:26:00,436 - ERROR - Error in execute: Run directory not found: run_54
+2025-07-22 14:26:00,436 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 982, in main
+    results = manager.run_execution(args.run_path, execution_config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 235, in run_execution
+    raise FileNotFoundError(f"Run directory not found: {run_path}")
+FileNotFoundError: Run directory not found: run_54
+
+2025-07-22 14:26:12,943 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:26:12,943 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:26:12,943 - INFO - 🎬 Starting execution for: run_54
+2025-07-22 14:26:12,943 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path runs/run_54 --num_episodes 5 --fps 3
+2025-07-22 14:26:15,789 - INFO - ✅ Execution completed successfully for run_54
+2025-07-22 14:26:15,789 - INFO - Execution info saved to: runs/run_54/info/execution_info.json
+2025-07-22 14:33:54,605 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:33:54,605 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:33:54,605 - INFO - 🎬 Starting execution for: run_54
+2025-07-22 14:33:54,605 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_54 --num_episodes 1 --fps 3 --max_steps 50
+2025-07-22 14:33:57,477 - ERROR - ❌ Execution failed for run_54
+2025-07-22 14:33:57,477 - ERROR - Error output: None
+2025-07-22 14:33:57,477 - ERROR - ❌ Execution error for run_54: Execution failed with return code 2
+2025-07-22 14:33:57,477 - ERROR - Error in execute: Execution failed with return code 2
+2025-07-22 14:33:57,479 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 993, in main
+    results = manager.run_execution(str(run_dir), execution_config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 290, in run_execution
+    raise RuntimeError(f"Execution failed with return code {result.returncode}")
+RuntimeError: Execution failed with return code 2
+
+2025-07-22 14:34:01,262 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:34:01,262 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:34:01,262 - INFO - 🎬 Starting execution for: run_53
+2025-07-22 14:34:01,262 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_53 --num_episodes 1 --fps 3 --max_steps 50
+2025-07-22 14:34:04,083 - ERROR - ❌ Execution failed for run_53
+2025-07-22 14:34:04,083 - ERROR - Error output: None
+2025-07-22 14:34:04,083 - ERROR - ❌ Execution error for run_53: Execution failed with return code 2
+2025-07-22 14:34:04,083 - ERROR - Error in execute: Execution failed with return code 2
+2025-07-22 14:34:04,085 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 993, in main
+    results = manager.run_execution(str(run_dir), execution_config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 290, in run_execution
+    raise RuntimeError(f"Execution failed with return code {result.returncode}")
+RuntimeError: Execution failed with return code 2
+
+2025-07-22 14:34:15,865 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:34:15,865 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:34:15,865 - INFO - 🎬 Starting execution for: run_54
+2025-07-22 14:34:15,865 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path runs/run_54 --num_episodes 1 --fps 3 --max_steps 50
+2025-07-22 14:34:18,686 - ERROR - ❌ Execution failed for run_54
+2025-07-22 14:34:18,686 - ERROR - Error output: None
+2025-07-22 14:34:18,686 - ERROR - ❌ Execution error for run_54: Execution failed with return code 2
+2025-07-22 14:34:18,686 - ERROR - Error in execute: Execution failed with return code 2
+2025-07-22 14:34:18,687 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 993, in main
+    results = manager.run_execution(str(run_dir), execution_config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 290, in run_execution
+    raise RuntimeError(f"Execution failed with return code {result.returncode}")
+RuntimeError: Execution failed with return code 2
+
+2025-07-22 14:45:05,010 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:45:05,010 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:45:05,010 - INFO - 🎬 Starting execution for: run_57
+2025-07-22 14:45:05,010 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_57 --fps 3
+2025-07-22 14:45:07,931 - INFO - ✅ Execution completed successfully for run_57
+2025-07-22 14:45:07,931 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_57/info/execution_info.json
+2025-07-22 14:45:41,255 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:45:41,255 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:45:41,255 - INFO - 🎬 Starting execution for: run_58
+2025-07-22 14:45:41,255 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_58 --fps 3
+2025-07-22 14:45:44,126 - INFO - ✅ Execution completed successfully for run_58
+2025-07-22 14:45:44,128 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_58/info/execution_info.json
+2025-07-22 14:49:41,833 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:49:41,833 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:49:41,833 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_59
+2025-07-22 14:49:41,833 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_59/info/run_info.json
+2025-07-22 14:49:41,833 - INFO - 🚀 Starting training for run_59
+2025-07-22 14:49:41,833 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_59
+2025-07-22 14:49:41,833 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_59/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_59/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:50:15,839 - INFO - ✅ Training completed successfully for run_59
+2025-07-22 14:53:08,165 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:53:08,165 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:53:08,165 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_61
+2025-07-22 14:53:08,165 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_61/info/run_info.json
+2025-07-22 14:53:08,165 - INFO - 🚀 Starting training for run_61
+2025-07-22 14:53:08,165 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_61
+2025-07-22 14:53:08,166 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_61 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_61/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_61/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:53:27,629 - ERROR - ❌ Training failed for run_61
+2025-07-22 14:53:27,629 - ERROR - Error output: None
+2025-07-22 14:53:27,629 - ERROR - ❌ Training error for run_61: Training failed with return code 2
+2025-07-22 14:53:27,644 - ERROR - Error in train: Training failed with return code 2
+2025-07-22 14:53:27,644 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 963, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 2
+
+2025-07-22 14:55:17,954 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 14:55:17,954 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 14:55:17,954 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_62
+2025-07-22 14:55:17,954 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_62/info/run_info.json
+2025-07-22 14:55:17,954 - INFO - 🚀 Starting training for run_62
+2025-07-22 14:55:17,955 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_62
+2025-07-22 14:55:17,955 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_62 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_62/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_62/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 14:55:48,930 - INFO - ✅ Training completed successfully for run_62
+2025-07-22 15:07:10,791 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 15:07:10,791 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 15:07:10,791 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_63
+2025-07-22 15:07:10,791 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_63/info/run_info.json
+2025-07-22 15:07:10,791 - INFO - 🚀 Starting training for run_63
+2025-07-22 15:07:10,791 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_63
+2025-07-22 15:07:10,791 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_63 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_63/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_63/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 15:07:41,669 - INFO - ✅ Training completed successfully for run_63
+2025-07-22 15:15:54,555 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 15:15:54,555 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 15:15:54,555 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_64
+2025-07-22 15:15:54,555 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_64/info/run_info.json
+2025-07-22 15:15:54,555 - INFO - 🚀 Starting training for run_64
+2025-07-22 15:15:54,555 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_64
+2025-07-22 15:15:54,556 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_64 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_64/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_64/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 15:16:25,905 - INFO - ✅ Training completed successfully for run_64
+2025-07-22 15:20:36,679 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 15:20:36,679 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 15:20:36,679 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_65
+2025-07-22 15:20:36,679 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_65/info/run_info.json
+2025-07-22 15:20:36,680 - INFO - 🚀 Starting training for run_65
+2025-07-22 15:20:36,680 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_65
+2025-07-22 15:20:36,680 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_65 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_65/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_65/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 15:21:26,206 - INFO - ✅ Training completed successfully for run_65
+2025-07-22 15:21:55,773 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 15:21:55,773 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 15:21:55,774 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66
+2025-07-22 15:21:55,774 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66/info/run_info.json
+2025-07-22 15:21:55,774 - INFO - 🚀 Starting training for run_66
+2025-07-22 15:21:55,774 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66
+2025-07-22 15:21:55,774 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 15:22:26,978 - INFO - ✅ Training completed successfully for run_66
+2025-07-22 15:23:36,984 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 15:23:36,985 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 15:23:36,985 - INFO - 🎬 Starting execution for: run_66
+2025-07-22 15:23:36,985 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66 --fps 3
+2025-07-22 15:23:39,856 - INFO - ✅ Execution completed successfully for run_66
+2025-07-22 15:23:39,857 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_66/info/execution_info.json
+2025-07-22 15:58:16,837 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 15:58:16,837 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 15:58:16,838 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_68
+2025-07-22 15:58:16,838 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_68/info/run_info.json
+2025-07-22 15:58:16,838 - INFO - 🚀 Starting training for run_68
+2025-07-22 15:58:16,838 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_68
+2025-07-22 15:58:16,838 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_68 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_68/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_68/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 12
+2025-07-22 15:58:47,831 - INFO - ✅ Training completed successfully for run_68
+2025-07-22 16:00:42,959 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-07-22 16:00:42,959 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-07-22 16:00:42,991 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_69
+2025-07-22 16:00:42,991 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_69/info/run_info.json
+2025-07-22 16:00:42,991 - INFO - 🚀 Starting training for run_69
+2025-07-22 16:00:42,991 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_69
+2025-07-22 16:00:42,991 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_69 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_69/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_69/training_progress/training_log.csv --total-timesteps 100000 --grid-size 5 --max-cycles 12
+2025-07-22 16:21:39,505 - INFO - ✅ Training completed successfully for run_69
+2025-08-06 16:48:52,716 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 16:48:52,716 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 16:48:52,716 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-06 16:48:52,717 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70
+2025-08-06 16:48:52,717 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70/info/run_info.json
+2025-08-06 16:48:52,717 - INFO - 🚀 Starting training for run_70
+2025-08-06 16:48:52,717 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70
+2025-08-06 16:48:52,717 - INFO - Running command: /opt/anaconda3/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 30
+2025-08-06 16:48:52,831 - ERROR - ❌ Training failed for run_70
+2025-08-06 16:48:52,832 - ERROR - Error output: None
+2025-08-06 16:48:52,832 - ERROR - ❌ Training error for run_70: Training failed with return code 1
+2025-08-06 16:48:52,833 - ERROR - Error in pipeline: Training failed with return code 1
+2025-08-06 16:48:52,835 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1014, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 311, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-06 16:49:34,002 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 16:49:34,002 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 16:49:34,002 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70
+2025-08-06 16:49:34,002 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70/info/run_info.json
+2025-08-06 16:49:34,002 - INFO - 🚀 Starting training for run_70
+2025-08-06 16:49:34,002 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70
+2025-08-06 16:49:34,002 - INFO - Running command: /opt/anaconda3/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_70/training_progress/training_log.csv --total-timesteps 100000 --grid-size 5 --max-cycles 12
+2025-08-06 16:49:34,066 - ERROR - ❌ Training failed for run_70
+2025-08-06 16:49:34,067 - ERROR - Error output: None
+2025-08-06 16:49:34,067 - ERROR - ❌ Training error for run_70: Training failed with return code 1
+2025-08-06 16:49:34,099 - ERROR - Error in train: Training failed with return code 1
+2025-08-06 16:49:34,101 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 963, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-06 16:49:57,904 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 16:49:57,904 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 16:49:57,904 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-06 16:49:57,904 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71
+2025-08-06 16:49:57,904 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71/info/run_info.json
+2025-08-06 16:49:57,904 - INFO - 🚀 Starting training for run_71
+2025-08-06 16:49:57,904 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71
+2025-08-06 16:49:57,904 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 30
+2025-08-06 16:50:44,415 - INFO - ✅ Training completed successfully for run_71
+2025-08-06 16:50:44,415 - INFO - 🎬 Starting execution for: run_71
+2025-08-06 16:50:44,415 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71 --fps 3
+2025-08-06 16:50:47,337 - INFO - ✅ Execution completed successfully for run_71
+2025-08-06 16:50:47,339 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_71/info/execution_info.json
+2025-08-06 16:50:47,339 - INFO - 🎉 Complete pipeline finished for run_71
+2025-08-06 17:04:28,692 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 17:04:28,692 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 17:04:28,692 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-06 17:04:28,692 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72
+2025-08-06 17:04:28,692 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72/info/run_info.json
+2025-08-06 17:04:28,692 - INFO - 🚀 Starting training for run_72
+2025-08-06 17:04:28,692 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72
+2025-08-06 17:04:28,692 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 30
+2025-08-06 17:05:06,820 - INFO - ✅ Training completed successfully for run_72
+2025-08-06 17:05:06,821 - INFO - 🎬 Starting execution for: run_72
+2025-08-06 17:05:06,821 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72 --fps 3
+2025-08-06 17:05:13,301 - INFO - ✅ Execution completed successfully for run_72
+2025-08-06 17:05:13,301 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_72/info/execution_info.json
+2025-08-06 17:05:13,301 - INFO - 🎉 Complete pipeline finished for run_72
+2025-08-06 17:10:37,371 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 17:10:37,372 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 17:10:37,372 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-06 17:10:37,372 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73
+2025-08-06 17:10:37,372 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73/info/run_info.json
+2025-08-06 17:10:37,372 - INFO - 🚀 Starting training for run_73
+2025-08-06 17:10:37,372 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73
+2025-08-06 17:10:37,372 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 30
+2025-08-06 17:11:14,983 - INFO - ✅ Training completed successfully for run_73
+2025-08-06 17:11:14,983 - INFO - 🎬 Starting execution for: run_73
+2025-08-06 17:11:14,983 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-06 17:11:39,018 - INFO - ✅ Execution completed successfully for run_73
+2025-08-06 17:11:39,020 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_73/info/execution_info.json
+2025-08-06 17:11:39,021 - INFO - 🎉 Complete pipeline finished for run_73
+2025-08-06 17:12:07,585 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 17:12:07,585 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 17:12:07,585 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-06 17:12:07,585 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74
+2025-08-06 17:12:07,585 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74/info/run_info.json
+2025-08-06 17:12:07,585 - INFO - 🚀 Starting training for run_74
+2025-08-06 17:12:07,585 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74
+2025-08-06 17:12:07,585 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74/training_progress/training_log.csv --total-timesteps 1000 --grid-size 5 --max-cycles 30
+2025-08-06 17:12:43,373 - INFO - ✅ Training completed successfully for run_74
+2025-08-06 17:12:43,373 - INFO - 🎬 Starting execution for: run_74
+2025-08-06 17:12:43,373 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-06 17:13:10,713 - INFO - ✅ Execution completed successfully for run_74
+2025-08-06 17:13:10,715 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_74/info/execution_info.json
+2025-08-06 17:13:10,715 - INFO - 🎉 Complete pipeline finished for run_74
+2025-08-06 17:26:07,923 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-06 17:26:07,923 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-06 17:26:07,923 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-06 17:26:07,923 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75
+2025-08-06 17:26:07,923 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75/info/run_info.json
+2025-08-06 17:26:07,923 - INFO - 🚀 Starting training for run_75
+2025-08-06 17:26:07,923 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75
+2025-08-06 17:26:07,923 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-06 17:52:16,453 - INFO - ✅ Training completed successfully for run_75
+2025-08-06 17:52:16,453 - INFO - 🎬 Starting execution for: run_75
+2025-08-06 17:52:16,453 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-06 17:52:40,539 - INFO - ✅ Execution completed successfully for run_75
+2025-08-06 17:52:40,540 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_75/info/execution_info.json
+2025-08-06 17:52:40,540 - INFO - 🎉 Complete pipeline finished for run_75
+2025-08-07 20:30:29,631 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-07 20:30:29,631 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-07 20:30:29,631 - INFO - 🔄 Starting complete pipeline: training + execution
+2025-08-07 20:30:29,631 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76
+2025-08-07 20:30:29,631 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76/info/run_info.json
+2025-08-07 20:30:29,631 - INFO - 🚀 Starting training for run_76
+2025-08-07 20:30:29,631 - INFO - 📁 Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76
+2025-08-07 20:30:29,631 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-07 20:55:51,688 - INFO - ✅ Training completed successfully for run_76
+2025-08-07 20:55:51,689 - INFO - 🎬 Starting execution for: run_76
+2025-08-07 20:55:51,689 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-07 20:56:16,730 - INFO - ✅ Execution completed successfully for run_76
+2025-08-07 20:56:16,731 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_76/info/execution_info.json
+2025-08-07 20:56:16,731 - INFO - 🎉 Complete pipeline finished for run_76
+2025-08-10 12:44:03,353 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-10 12:44:03,354 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-10 12:44:03,354 - INFO - Starting complete pipeline: training + execution
+2025-08-10 12:44:03,354 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77
+2025-08-10 12:44:03,354 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77/info/run_info.json
+2025-08-10 12:44:03,354 - INFO - Starting training for run_77
+2025-08-10 12:44:03,354 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77
+2025-08-10 12:44:03,354 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-10 13:09:51,449 - INFO - Training completed successfully for run_77
+2025-08-10 13:09:51,464 - INFO - Starting execution for: run_77
+2025-08-10 13:09:51,464 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-10 13:10:16,141 - INFO - Execution completed successfully for run_77
+2025-08-10 13:10:16,142 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_77/info/execution_info.json
+2025-08-10 13:10:16,142 - INFO - Complete pipeline finished for run_77
+2025-08-12 01:13:03,661 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:13:03,662 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:13:03,662 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:13:03,662 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_78
+2025-08-12 01:13:03,662 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_78/info/run_info.json
+2025-08-12 01:13:03,662 - INFO - Starting training for run_78
+2025-08-12 01:13:03,662 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_78
+2025-08-12 01:13:03,662 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_78 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_78/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_78/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:18:53,091 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:18:53,091 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:18:53,091 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:18:53,092 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_79
+2025-08-12 01:18:53,092 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_79/info/run_info.json
+2025-08-12 01:18:53,092 - INFO - Starting training for run_79
+2025-08-12 01:18:53,092 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_79
+2025-08-12 01:18:53,092 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_79 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_79/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_79/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:18:55,962 - ERROR - Training failed for run_79
+2025-08-12 01:18:55,962 - ERROR - Error output: None
+2025-08-12 01:18:55,963 - ERROR - Training error for run_79: Training failed with return code 1
+2025-08-12 01:18:55,977 - ERROR - Error in pipeline: Training failed with return code 1
+2025-08-12 01:18:55,979 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1020, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 317, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 01:20:00,258 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:20:00,259 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:20:00,259 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:20:00,259 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_80
+2025-08-12 01:20:00,259 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_80/info/run_info.json
+2025-08-12 01:20:00,259 - INFO - Starting training for run_80
+2025-08-12 01:20:00,259 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_80
+2025-08-12 01:20:00,259 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_80 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_80/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_80/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:20:03,129 - ERROR - Training failed for run_80
+2025-08-12 01:20:03,129 - ERROR - Error output: None
+2025-08-12 01:20:03,130 - ERROR - Training error for run_80: Training failed with return code 1
+2025-08-12 01:20:03,144 - ERROR - Error in pipeline: Training failed with return code 1
+2025-08-12 01:20:03,146 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1020, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 317, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 01:20:27,167 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:20:27,167 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:20:27,167 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:20:27,168 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_81
+2025-08-12 01:20:27,168 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_81/info/run_info.json
+2025-08-12 01:20:27,168 - INFO - Starting training for run_81
+2025-08-12 01:20:27,168 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_81
+2025-08-12 01:20:27,168 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_81 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_81/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_81/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:21:08,037 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:21:08,037 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:21:08,037 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:21:08,037 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_82
+2025-08-12 01:21:08,037 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_82/info/run_info.json
+2025-08-12 01:21:08,037 - INFO - Starting training for run_82
+2025-08-12 01:21:08,037 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_82
+2025-08-12 01:21:08,037 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_82 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_82/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_82/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:22:37,109 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:22:37,109 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:22:37,109 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:22:37,110 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_83
+2025-08-12 01:22:37,110 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_83/info/run_info.json
+2025-08-12 01:22:37,110 - INFO - Starting training for run_83
+2025-08-12 01:22:37,110 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_83
+2025-08-12 01:22:37,110 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_83 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_83/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_83/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:37:33,239 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:37:33,239 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:37:33,239 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:37:33,239 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_84
+2025-08-12 01:37:33,239 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_84/info/run_info.json
+2025-08-12 01:37:33,239 - INFO - Starting training for run_84
+2025-08-12 01:37:33,240 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_84
+2025-08-12 01:37:33,240 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_84 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_84/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_84/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 01:38:23,826 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:38:23,826 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:38:23,826 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:38:23,826 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85
+2025-08-12 01:38:23,826 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85/info/run_info.json
+2025-08-12 01:38:23,826 - INFO - Starting training for run_85
+2025-08-12 01:38:23,826 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85
+2025-08-12 01:38:23,827 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85/training_progress/training_log.csv --total-timesteps 800 --grid-size 5 --max-cycles 30
+2025-08-12 01:38:59,811 - INFO - Training completed successfully for run_85
+2025-08-12 01:38:59,812 - INFO - Starting execution for: run_85
+2025-08-12 01:38:59,812 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 01:39:24,148 - INFO - Execution completed successfully for run_85
+2025-08-12 01:39:24,150 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_85/info/execution_info.json
+2025-08-12 01:39:24,150 - INFO - Complete pipeline finished for run_85
+2025-08-12 01:50:08,092 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:50:08,092 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:50:08,092 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:50:08,093 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86
+2025-08-12 01:50:08,093 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86/info/run_info.json
+2025-08-12 01:50:08,093 - INFO - Starting training for run_86
+2025-08-12 01:50:08,093 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86
+2025-08-12 01:50:08,093 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86/training_progress/training_log.csv --total-timesteps 800 --grid-size 5 --max-cycles 30
+2025-08-12 01:50:44,226 - INFO - Training completed successfully for run_86
+2025-08-12 01:50:44,227 - INFO - Starting execution for: run_86
+2025-08-12 01:50:44,227 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 01:51:08,913 - INFO - Execution completed successfully for run_86
+2025-08-12 01:51:08,913 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_86/info/execution_info.json
+2025-08-12 01:51:08,913 - INFO - Complete pipeline finished for run_86
+2025-08-12 01:52:16,135 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 01:52:16,135 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 01:52:16,135 - INFO - Starting complete pipeline: training + execution
+2025-08-12 01:52:16,135 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87
+2025-08-12 01:52:16,135 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87/info/run_info.json
+2025-08-12 01:52:16,135 - INFO - Starting training for run_87
+2025-08-12 01:52:16,135 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87
+2025-08-12 01:52:16,135 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87/training_progress/training_log.csv --total-timesteps 800 --grid-size 5 --max-cycles 30
+2025-08-12 01:52:52,297 - INFO - Training completed successfully for run_87
+2025-08-12 01:52:52,297 - INFO - Starting execution for: run_87
+2025-08-12 01:52:52,297 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 01:53:16,879 - INFO - Execution completed successfully for run_87
+2025-08-12 01:53:16,879 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_87/info/execution_info.json
+2025-08-12 01:53:16,880 - INFO - Complete pipeline finished for run_87
+2025-08-12 02:09:23,564 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 02:09:23,564 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 02:09:23,564 - INFO - Starting complete pipeline: training + execution
+2025-08-12 02:09:23,565 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_88
+2025-08-12 02:09:23,565 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_88/info/run_info.json
+2025-08-12 02:09:23,565 - INFO - Starting training for run_88
+2025-08-12 02:09:23,565 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_88
+2025-08-12 02:09:23,565 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_88 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_88/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_88/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 02:11:58,457 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 02:11:58,457 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 02:11:58,457 - INFO - Starting complete pipeline: training + execution
+2025-08-12 02:11:58,457 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89
+2025-08-12 02:11:58,458 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89/info/run_info.json
+2025-08-12 02:11:58,458 - INFO - Starting training for run_89
+2025-08-12 02:11:58,458 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89
+2025-08-12 02:11:58,458 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89/training_progress/training_log.csv --total-timesteps 800 --grid-size 5 --max-cycles 30
+2025-08-12 02:12:34,372 - INFO - Training completed successfully for run_89
+2025-08-12 02:12:34,372 - INFO - Starting execution for: run_89
+2025-08-12 02:12:34,372 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 02:12:58,845 - INFO - Execution completed successfully for run_89
+2025-08-12 02:12:58,847 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_89/info/execution_info.json
+2025-08-12 02:12:58,848 - INFO - Complete pipeline finished for run_89
+2025-08-12 02:12:58,848 - INFO - Starting complete pipeline: training + execution
+2025-08-12 02:12:58,850 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_90
+2025-08-12 02:12:58,850 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_90/info/run_info.json
+2025-08-12 02:12:58,851 - INFO - Starting training for run_90
+2025-08-12 02:12:58,851 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_90
+2025-08-12 02:12:58,851 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_90 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_90/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_90/training_progress/training_log.csv --total-timesteps 800 --grid-size 5 --max-cycles 30 --seed 73
+2025-08-12 02:15:41,423 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 02:15:41,423 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 02:15:41,423 - INFO - Starting complete pipeline: training + execution
+2025-08-12 02:15:41,423 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91
+2025-08-12 02:15:41,424 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91/info/run_info.json
+2025-08-12 02:15:41,424 - INFO - Starting training for run_91
+2025-08-12 02:15:41,424 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91
+2025-08-12 02:15:41,424 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 02:42:01,338 - INFO - Training completed successfully for run_91
+2025-08-12 02:42:01,338 - INFO - Starting execution for: run_91
+2025-08-12 02:42:01,338 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 02:42:26,113 - INFO - Execution completed successfully for run_91
+2025-08-12 02:42:26,115 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_91/info/execution_info.json
+2025-08-12 02:42:26,115 - INFO - Complete pipeline finished for run_91
+2025-08-12 02:42:26,115 - INFO - Starting complete pipeline: training + execution
+2025-08-12 02:42:26,116 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92
+2025-08-12 02:42:26,117 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92/info/run_info.json
+2025-08-12 02:42:26,117 - INFO - Starting training for run_92
+2025-08-12 02:42:26,117 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92
+2025-08-12 02:42:26,117 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --seed 73
+2025-08-12 03:08:18,820 - INFO - Training completed successfully for run_92
+2025-08-12 03:08:18,820 - INFO - Starting execution for: run_92
+2025-08-12 03:08:18,820 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 03:08:43,656 - INFO - Execution completed successfully for run_92
+2025-08-12 03:08:43,658 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_92/info/execution_info.json
+2025-08-12 03:08:43,658 - INFO - Complete pipeline finished for run_92
+2025-08-12 03:08:43,658 - INFO - Starting complete pipeline: training + execution
+2025-08-12 03:08:43,660 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93
+2025-08-12 03:08:43,661 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93/info/run_info.json
+2025-08-12 03:08:43,661 - INFO - Starting training for run_93
+2025-08-12 03:08:43,661 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93
+2025-08-12 03:08:43,661 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --seed 100
+2025-08-12 03:34:45,532 - INFO - Training completed successfully for run_93
+2025-08-12 03:34:45,533 - INFO - Starting execution for: run_93
+2025-08-12 03:34:45,533 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 03:35:10,157 - INFO - Execution completed successfully for run_93
+2025-08-12 03:35:10,157 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_93/info/execution_info.json
+2025-08-12 03:35:10,157 - INFO - Complete pipeline finished for run_93
+2025-08-12 03:35:10,157 - INFO - Starting complete pipeline: training + execution
+2025-08-12 03:35:10,158 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_94
+2025-08-12 03:35:10,158 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_94/info/run_info.json
+2025-08-12 03:35:10,158 - INFO - Starting training for run_94
+2025-08-12 03:35:10,158 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_94
+2025-08-12 03:35:10,158 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_94 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_94/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_94/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0
+2025-08-12 03:35:35,298 - ERROR - Training failed for run_94
+2025-08-12 03:35:35,299 - ERROR - Error output: None
+2025-08-12 03:35:35,299 - ERROR - Training error for run_94: Training failed with return code 1
+2025-08-12 03:35:35,313 - ERROR - Error in pipeline: Training failed with return code 1
+2025-08-12 03:35:35,314 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1043, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 317, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 11:24:08,637 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:24:08,637 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:24:08,637 - INFO - Starting complete pipeline: training + execution
+2025-08-12 11:24:08,638 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_95
+2025-08-12 11:24:08,638 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_95/info/run_info.json
+2025-08-12 11:24:08,638 - INFO - Starting training for run_95
+2025-08-12 11:24:08,638 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_95
+2025-08-12 11:24:08,638 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_95 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_95/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_95/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0
+2025-08-12 11:24:33,715 - ERROR - Training failed for run_95
+2025-08-12 11:24:33,715 - ERROR - Error output: None
+2025-08-12 11:24:33,715 - ERROR - Training error for run_95: Training failed with return code 1
+2025-08-12 11:24:33,730 - ERROR - Error in pipeline: Training failed with return code 1
+2025-08-12 11:24:33,730 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 1043, in main
+    run_number, run_dir, results = manager.run_complete_pipeline(training_config, execution_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 317, in run_complete_pipeline
+    run_number, run_dir = self.run_training(training_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 11:28:10,266 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:28:10,266 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:28:10,266 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_96
+2025-08-12 11:28:10,266 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_96/info/run_info.json
+2025-08-12 11:28:10,266 - INFO - Starting training for run_96
+2025-08-12 11:28:10,266 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_96
+2025-08-12 11:28:10,266 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_96 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_96/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_96/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8
+2025-08-12 11:28:30,738 - INFO - Training completed successfully for run_96
+2025-08-12 11:29:26,019 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:29:26,019 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:29:26,019 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_97
+2025-08-12 11:29:26,019 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_97/info/run_info.json
+2025-08-12 11:29:26,019 - INFO - Starting training for run_97
+2025-08-12 11:29:26,019 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_97
+2025-08-12 11:29:26,019 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_97 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_97/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_97/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8 --n-obs-neighbors 0
+2025-08-12 11:29:46,295 - INFO - Training completed successfully for run_97
+2025-08-12 11:30:16,696 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:30:16,696 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:30:16,697 - INFO - Starting complete pipeline: training + execution
+2025-08-12 11:30:16,697 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_98
+2025-08-12 11:30:16,697 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_98/info/run_info.json
+2025-08-12 11:30:16,697 - INFO - Starting training for run_98
+2025-08-12 11:30:16,697 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_98
+2025-08-12 11:30:16,697 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_98 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_98/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_98/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0
+2025-08-12 11:37:21,449 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:37:21,449 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:37:21,450 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_99
+2025-08-12 11:37:21,450 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_99/info/run_info.json
+2025-08-12 11:37:21,450 - INFO - Starting training for run_99
+2025-08-12 11:37:21,450 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_99
+2025-08-12 11:37:21,450 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_99 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_99/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_99/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8 --n-obs-neighbors 0
+2025-08-12 11:37:22,967 - ERROR - Training failed for run_99
+2025-08-12 11:37:22,967 - ERROR - Error output: None
+2025-08-12 11:37:22,968 - ERROR - Training error for run_99: Training failed with return code 1
+2025-08-12 11:37:22,982 - ERROR - Error in train: Training failed with return code 1
+2025-08-12 11:37:22,983 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 975, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 11:37:42,546 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:37:42,546 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:37:42,546 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_100
+2025-08-12 11:37:42,546 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_100/info/run_info.json
+2025-08-12 11:37:42,546 - INFO - Starting training for run_100
+2025-08-12 11:37:42,546 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_100
+2025-08-12 11:37:42,547 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_100 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_100/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_100/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8 --n-obs-neighbors 0
+2025-08-12 11:38:02,174 - ERROR - Training failed for run_100
+2025-08-12 11:38:02,174 - ERROR - Error output: None
+2025-08-12 11:38:02,174 - ERROR - Training error for run_100: Training failed with return code 1
+2025-08-12 11:38:02,188 - ERROR - Error in train: Training failed with return code 1
+2025-08-12 11:38:02,189 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 975, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 11:38:26,565 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:38:26,565 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:38:26,565 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_101
+2025-08-12 11:38:26,565 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_101/info/run_info.json
+2025-08-12 11:38:26,565 - INFO - Starting training for run_101
+2025-08-12 11:38:26,565 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_101
+2025-08-12 11:38:26,565 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_101 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_101/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_101/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8 --n-obs-neighbors 0
+2025-08-12 11:38:46,989 - ERROR - Training failed for run_101
+2025-08-12 11:38:46,990 - ERROR - Error output: None
+2025-08-12 11:38:46,990 - ERROR - Training error for run_101: Training failed with return code 1
+2025-08-12 11:38:47,004 - ERROR - Error in train: Training failed with return code 1
+2025-08-12 11:38:47,005 - ERROR - Traceback (most recent call last):
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 975, in main
+    run_number, run_dir = manager.run_training(config, args.run_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dongmingwang/project/DSDP/dsdp/wireless_comm/run_and_test.py", line 212, in run_training
+    raise RuntimeError(f"Training failed with return code {result.returncode}")
+RuntimeError: Training failed with return code 1
+
+2025-08-12 11:39:14,958 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:39:14,958 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:39:14,958 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_102
+2025-08-12 11:39:14,958 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_102/info/run_info.json
+2025-08-12 11:39:14,958 - INFO - Starting training for run_102
+2025-08-12 11:39:14,958 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_102
+2025-08-12 11:39:14,958 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_102 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_102/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_102/training_progress/training_log.csv --total-timesteps 100 --grid-size 3 --max-cycles 8 --n-obs-neighbors 0
+2025-08-12 11:39:35,390 - INFO - Training completed successfully for run_102
+2025-08-12 11:39:57,945 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:39:57,945 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:39:57,945 - INFO - Starting complete pipeline: training + execution
+2025-08-12 11:39:57,945 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_103
+2025-08-12 11:39:57,945 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_103/info/run_info.json
+2025-08-12 11:39:57,945 - INFO - Starting training for run_103
+2025-08-12 11:39:57,945 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_103
+2025-08-12 11:39:57,945 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_103 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_103/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_103/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0
+2025-08-12 11:41:02,528 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-12 11:41:02,528 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-12 11:41:02,528 - INFO - Starting complete pipeline: training + execution
+2025-08-12 11:41:02,528 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104
+2025-08-12 11:41:02,528 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104/info/run_info.json
+2025-08-12 11:41:02,528 - INFO - Starting training for run_104
+2025-08-12 11:41:02,528 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104
+2025-08-12 11:41:02,528 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-12 12:07:17,814 - INFO - Training completed successfully for run_104
+2025-08-12 12:07:17,815 - INFO - Starting execution for: run_104
+2025-08-12 12:07:17,815 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 12:07:19,332 - INFO - Execution completed successfully for run_104
+2025-08-12 12:07:19,333 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_104/info/execution_info.json
+2025-08-12 12:07:19,333 - INFO - Complete pipeline finished for run_104
+2025-08-12 12:07:19,333 - INFO - Starting complete pipeline: training + execution
+2025-08-12 12:07:19,333 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105
+2025-08-12 12:07:19,333 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105/info/run_info.json
+2025-08-12 12:07:19,333 - INFO - Starting training for run_105
+2025-08-12 12:07:19,333 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105
+2025-08-12 12:07:19,334 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --seed 73
+2025-08-12 12:33:22,999 - INFO - Training completed successfully for run_105
+2025-08-12 12:33:22,999 - INFO - Starting execution for: run_105
+2025-08-12 12:33:22,999 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 12:33:24,568 - INFO - Execution completed successfully for run_105
+2025-08-12 12:33:24,569 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_105/info/execution_info.json
+2025-08-12 12:33:24,569 - INFO - Complete pipeline finished for run_105
+2025-08-12 12:33:24,569 - INFO - Starting complete pipeline: training + execution
+2025-08-12 12:33:24,571 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106
+2025-08-12 12:33:24,571 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106/info/run_info.json
+2025-08-12 12:33:24,571 - INFO - Starting training for run_106
+2025-08-12 12:33:24,571 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106
+2025-08-12 12:33:24,571 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --seed 100
+2025-08-12 12:59:41,271 - INFO - Training completed successfully for run_106
+2025-08-12 12:59:41,272 - INFO - Starting execution for: run_106
+2025-08-12 12:59:41,272 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 12:59:42,842 - INFO - Execution completed successfully for run_106
+2025-08-12 12:59:42,843 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_106/info/execution_info.json
+2025-08-12 12:59:42,843 - INFO - Complete pipeline finished for run_106
+2025-08-12 12:59:42,843 - INFO - Starting complete pipeline: training + execution
+2025-08-12 12:59:42,845 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107
+2025-08-12 12:59:42,845 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107/info/run_info.json
+2025-08-12 12:59:42,845 - INFO - Starting training for run_107
+2025-08-12 12:59:42,845 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107
+2025-08-12 12:59:42,846 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0
+2025-08-12 13:24:07,230 - INFO - Training completed successfully for run_107
+2025-08-12 13:24:07,231 - INFO - Starting execution for: run_107
+2025-08-12 13:24:07,231 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 13:24:08,799 - INFO - Execution completed successfully for run_107
+2025-08-12 13:24:08,800 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_107/info/execution_info.json
+2025-08-12 13:24:08,800 - INFO - Complete pipeline finished for run_107
+2025-08-12 13:24:08,800 - INFO - Starting complete pipeline: training + execution
+2025-08-12 13:24:08,803 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108
+2025-08-12 13:24:08,803 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108/info/run_info.json
+2025-08-12 13:24:08,804 - INFO - Starting training for run_108
+2025-08-12 13:24:08,804 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108
+2025-08-12 13:24:08,804 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 1
+2025-08-12 13:50:11,236 - INFO - Training completed successfully for run_108
+2025-08-12 13:50:11,236 - INFO - Starting execution for: run_108
+2025-08-12 13:50:11,236 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 13:50:12,803 - INFO - Execution completed successfully for run_108
+2025-08-12 13:50:12,804 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_108/info/execution_info.json
+2025-08-12 13:50:12,804 - INFO - Complete pipeline finished for run_108
+2025-08-12 13:50:12,804 - INFO - Starting complete pipeline: training + execution
+2025-08-12 13:50:12,806 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109
+2025-08-12 13:50:12,806 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109/info/run_info.json
+2025-08-12 13:50:12,806 - INFO - Starting training for run_109
+2025-08-12 13:50:12,806 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109
+2025-08-12 13:50:12,806 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 2
+2025-08-12 14:20:31,243 - INFO - Training completed successfully for run_109
+2025-08-12 14:20:31,243 - INFO - Starting execution for: run_109
+2025-08-12 14:20:31,243 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 14:20:32,811 - INFO - Execution completed successfully for run_109
+2025-08-12 14:20:32,812 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_109/info/execution_info.json
+2025-08-12 14:20:32,812 - INFO - Complete pipeline finished for run_109
+2025-08-12 14:20:32,812 - INFO - Starting complete pipeline: training + execution
+2025-08-12 14:20:32,813 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110
+2025-08-12 14:20:32,813 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110/info/run_info.json
+2025-08-12 14:20:32,813 - INFO - Starting training for run_110
+2025-08-12 14:20:32,813 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110
+2025-08-12 14:20:32,813 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 3
+2025-08-12 15:01:57,397 - INFO - Training completed successfully for run_110
+2025-08-12 15:01:57,397 - INFO - Starting execution for: run_110
+2025-08-12 15:01:57,397 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-12 15:01:59,065 - INFO - Execution completed successfully for run_110
+2025-08-12 15:01:59,066 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_110/info/execution_info.json
+2025-08-12 15:01:59,066 - INFO - Complete pipeline finished for run_110
+2025-08-17 03:53:56,477 - INFO - DSDP Run Manager initialized at: /home/dongmingwang/project/DSDP/dsdp/wireless_comm
+2025-08-17 03:53:56,477 - INFO - Runs directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs
+2025-08-17 03:53:56,477 - INFO - Starting complete pipeline: training + execution
+2025-08-17 03:53:56,477 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111
+2025-08-17 03:53:56,478 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111/info/run_info.json
+2025-08-17 03:53:56,478 - INFO - Starting training for run_111
+2025-08-17 03:53:56,478 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111
+2025-08-17 03:53:56,478 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30
+2025-08-17 04:39:27,891 - INFO - Training completed successfully for run_111
+2025-08-17 04:39:27,891 - INFO - Starting execution for: run_111
+2025-08-17 04:39:27,891 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 04:39:29,510 - INFO - Execution completed successfully for run_111
+2025-08-17 04:39:29,511 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_111/info/execution_info.json
+2025-08-17 04:39:29,511 - INFO - Complete pipeline finished for run_111
+2025-08-17 04:39:29,511 - INFO - Starting complete pipeline: training + execution
+2025-08-17 04:39:29,511 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112
+2025-08-17 04:39:29,511 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112/info/run_info.json
+2025-08-17 04:39:29,511 - INFO - Starting training for run_112
+2025-08-17 04:39:29,511 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112
+2025-08-17 04:39:29,511 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --seed 73
+2025-08-17 05:24:51,671 - INFO - Training completed successfully for run_112
+2025-08-17 05:24:51,671 - INFO - Starting execution for: run_112
+2025-08-17 05:24:51,671 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 05:24:53,340 - INFO - Execution completed successfully for run_112
+2025-08-17 05:24:53,340 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_112/info/execution_info.json
+2025-08-17 05:24:53,340 - INFO - Complete pipeline finished for run_112
+2025-08-17 05:24:53,340 - INFO - Starting complete pipeline: training + execution
+2025-08-17 05:24:53,341 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113
+2025-08-17 05:24:53,341 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113/info/run_info.json
+2025-08-17 05:24:53,341 - INFO - Starting training for run_113
+2025-08-17 05:24:53,341 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113
+2025-08-17 05:24:53,341 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --seed 100
+2025-08-17 05:55:16,424 - INFO - Training completed successfully for run_113
+2025-08-17 05:55:16,425 - INFO - Starting execution for: run_113
+2025-08-17 05:55:16,425 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 05:55:17,992 - INFO - Execution completed successfully for run_113
+2025-08-17 05:55:17,993 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_113/info/execution_info.json
+2025-08-17 05:55:17,993 - INFO - Complete pipeline finished for run_113
+2025-08-17 05:55:17,993 - INFO - Starting complete pipeline: training + execution
+2025-08-17 05:55:17,995 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114
+2025-08-17 05:55:17,996 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114/info/run_info.json
+2025-08-17 05:55:17,996 - INFO - Starting training for run_114
+2025-08-17 05:55:17,996 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114
+2025-08-17 05:55:17,996 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0 --seed 1
+2025-08-17 06:20:02,398 - INFO - Training completed successfully for run_114
+2025-08-17 06:20:02,398 - INFO - Starting execution for: run_114
+2025-08-17 06:20:02,398 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 06:20:03,965 - INFO - Execution completed successfully for run_114
+2025-08-17 06:20:03,965 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_114/info/execution_info.json
+2025-08-17 06:20:03,965 - INFO - Complete pipeline finished for run_114
+2025-08-17 06:20:03,965 - INFO - Starting complete pipeline: training + execution
+2025-08-17 06:20:03,966 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115
+2025-08-17 06:20:03,966 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115/info/run_info.json
+2025-08-17 06:20:03,966 - INFO - Starting training for run_115
+2025-08-17 06:20:03,966 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115
+2025-08-17 06:20:03,966 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0 --seed 73
+2025-08-17 06:45:04,198 - INFO - Training completed successfully for run_115
+2025-08-17 06:45:04,198 - INFO - Starting execution for: run_115
+2025-08-17 06:45:04,198 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 06:45:05,817 - INFO - Execution completed successfully for run_115
+2025-08-17 06:45:05,817 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_115/info/execution_info.json
+2025-08-17 06:45:05,817 - INFO - Complete pipeline finished for run_115
+2025-08-17 06:45:05,817 - INFO - Starting complete pipeline: training + execution
+2025-08-17 06:45:05,818 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116
+2025-08-17 06:45:05,818 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116/info/run_info.json
+2025-08-17 06:45:05,818 - INFO - Starting training for run_116
+2025-08-17 06:45:05,818 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116
+2025-08-17 06:45:05,818 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 0 --seed 100
+2025-08-17 07:09:56,610 - INFO - Training completed successfully for run_116
+2025-08-17 07:09:56,611 - INFO - Starting execution for: run_116
+2025-08-17 07:09:56,611 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 07:09:58,229 - INFO - Execution completed successfully for run_116
+2025-08-17 07:09:58,229 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_116/info/execution_info.json
+2025-08-17 07:09:58,230 - INFO - Complete pipeline finished for run_116
+2025-08-17 07:09:58,230 - INFO - Starting complete pipeline: training + execution
+2025-08-17 07:09:58,232 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117
+2025-08-17 07:09:58,233 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117/info/run_info.json
+2025-08-17 07:09:58,233 - INFO - Starting training for run_117
+2025-08-17 07:09:58,233 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117
+2025-08-17 07:09:58,233 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 1
+2025-08-17 07:36:39,630 - INFO - Training completed successfully for run_117
+2025-08-17 07:36:39,631 - INFO - Starting execution for: run_117
+2025-08-17 07:36:39,631 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 07:36:41,248 - INFO - Execution completed successfully for run_117
+2025-08-17 07:36:41,248 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_117/info/execution_info.json
+2025-08-17 07:36:41,248 - INFO - Complete pipeline finished for run_117
+2025-08-17 07:36:41,248 - INFO - Starting complete pipeline: training + execution
+2025-08-17 07:36:41,249 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118
+2025-08-17 07:36:41,249 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118/info/run_info.json
+2025-08-17 07:36:41,249 - INFO - Starting training for run_118
+2025-08-17 07:36:41,249 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118
+2025-08-17 07:36:41,249 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 1 --seed 73
+2025-08-17 08:02:53,570 - INFO - Training completed successfully for run_118
+2025-08-17 08:02:53,571 - INFO - Starting execution for: run_118
+2025-08-17 08:02:53,571 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 08:02:55,189 - INFO - Execution completed successfully for run_118
+2025-08-17 08:02:55,190 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_118/info/execution_info.json
+2025-08-17 08:02:55,190 - INFO - Complete pipeline finished for run_118
+2025-08-17 08:02:55,190 - INFO - Starting complete pipeline: training + execution
+2025-08-17 08:02:55,192 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119
+2025-08-17 08:02:55,192 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119/info/run_info.json
+2025-08-17 08:02:55,192 - INFO - Starting training for run_119
+2025-08-17 08:02:55,192 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119
+2025-08-17 08:02:55,193 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 1 --seed 100
+2025-08-17 08:29:10,594 - INFO - Training completed successfully for run_119
+2025-08-17 08:29:10,595 - INFO - Starting execution for: run_119
+2025-08-17 08:29:10,595 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 08:29:12,212 - INFO - Execution completed successfully for run_119
+2025-08-17 08:29:12,213 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_119/info/execution_info.json
+2025-08-17 08:29:12,213 - INFO - Complete pipeline finished for run_119
+2025-08-17 08:29:12,213 - INFO - Starting complete pipeline: training + execution
+2025-08-17 08:29:12,216 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120
+2025-08-17 08:29:12,216 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120/info/run_info.json
+2025-08-17 08:29:12,216 - INFO - Starting training for run_120
+2025-08-17 08:29:12,216 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120
+2025-08-17 08:29:12,217 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 2
+2025-08-17 09:00:08,392 - INFO - Training completed successfully for run_120
+2025-08-17 09:00:08,392 - INFO - Starting execution for: run_120
+2025-08-17 09:00:08,392 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 09:00:10,060 - INFO - Execution completed successfully for run_120
+2025-08-17 09:00:10,060 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_120/info/execution_info.json
+2025-08-17 09:00:10,060 - INFO - Complete pipeline finished for run_120
+2025-08-17 09:00:10,060 - INFO - Starting complete pipeline: training + execution
+2025-08-17 09:00:10,061 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121
+2025-08-17 09:00:10,061 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121/info/run_info.json
+2025-08-17 09:00:10,061 - INFO - Starting training for run_121
+2025-08-17 09:00:10,061 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121
+2025-08-17 09:00:10,061 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 2 --seed 73
+2025-08-17 09:30:51,037 - INFO - Training completed successfully for run_121
+2025-08-17 09:30:51,038 - INFO - Starting execution for: run_121
+2025-08-17 09:30:51,038 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 09:30:52,656 - INFO - Execution completed successfully for run_121
+2025-08-17 09:30:52,657 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_121/info/execution_info.json
+2025-08-17 09:30:52,657 - INFO - Complete pipeline finished for run_121
+2025-08-17 09:30:52,657 - INFO - Starting complete pipeline: training + execution
+2025-08-17 09:30:52,658 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122
+2025-08-17 09:30:52,659 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122/info/run_info.json
+2025-08-17 09:30:52,659 - INFO - Starting training for run_122
+2025-08-17 09:30:52,659 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122
+2025-08-17 09:30:52,659 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 2 --seed 100
+2025-08-17 10:01:32,609 - INFO - Training completed successfully for run_122
+2025-08-17 10:01:32,610 - INFO - Starting execution for: run_122
+2025-08-17 10:01:32,610 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 10:01:34,279 - INFO - Execution completed successfully for run_122
+2025-08-17 10:01:34,279 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_122/info/execution_info.json
+2025-08-17 10:01:34,280 - INFO - Complete pipeline finished for run_122
+2025-08-17 10:01:34,280 - INFO - Starting complete pipeline: training + execution
+2025-08-17 10:01:34,282 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123
+2025-08-17 10:01:34,282 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123/info/run_info.json
+2025-08-17 10:01:34,282 - INFO - Starting training for run_123
+2025-08-17 10:01:34,282 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123
+2025-08-17 10:01:34,283 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 3
+2025-08-17 10:43:50,535 - INFO - Training completed successfully for run_123
+2025-08-17 10:43:50,536 - INFO - Starting execution for: run_123
+2025-08-17 10:43:50,536 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 10:43:52,203 - INFO - Execution completed successfully for run_123
+2025-08-17 10:43:52,204 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_123/info/execution_info.json
+2025-08-17 10:43:52,204 - INFO - Complete pipeline finished for run_123
+2025-08-17 10:43:52,204 - INFO - Starting complete pipeline: training + execution
+2025-08-17 10:43:52,206 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124
+2025-08-17 10:43:52,207 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124/info/run_info.json
+2025-08-17 10:43:52,207 - INFO - Starting training for run_124
+2025-08-17 10:43:52,207 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124
+2025-08-17 10:43:52,207 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 3 --seed 73
+2025-08-17 11:26:00,791 - INFO - Training completed successfully for run_124
+2025-08-17 11:26:00,791 - INFO - Starting execution for: run_124
+2025-08-17 11:26:00,791 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 11:26:02,509 - INFO - Execution completed successfully for run_124
+2025-08-17 11:26:02,509 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_124/info/execution_info.json
+2025-08-17 11:26:02,510 - INFO - Complete pipeline finished for run_124
+2025-08-17 11:26:02,510 - INFO - Starting complete pipeline: training + execution
+2025-08-17 11:26:02,511 - INFO - Created run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125
+2025-08-17 11:26:02,511 - INFO - Run info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125/info/run_info.json
+2025-08-17 11:26:02,511 - INFO - Starting training for run_125
+2025-08-17 11:26:02,511 - INFO - Run directory: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125
+2025-08-17 11:26:02,511 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python -m dsdp.wireless_comm.main --run-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125 --save-dir /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125/hyperparameters --log-path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125/training_progress/training_log.csv --total-timesteps 80000 --grid-size 5 --max-cycles 30 --n-obs-neighbors 3 --seed 100
+2025-08-17 12:07:43,951 - INFO - Training completed successfully for run_125
+2025-08-17 12:07:43,952 - INFO - Starting execution for: run_125
+2025-08-17 12:07:43,952 - INFO - Running command: /home/dongmingwang/.conda/envs/marl_env/bin/python execute_model.py --run_path /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125 --max_steps 50 --fps 3 --num_episodes 5
+2025-08-17 12:07:45,720 - INFO - Execution completed successfully for run_125
+2025-08-17 12:07:45,721 - INFO - Execution info saved to: /home/dongmingwang/project/DSDP/dsdp/wireless_comm/runs/run_125/info/execution_info.json
+2025-08-17 12:07:45,721 - INFO - Complete pipeline finished for run_125
